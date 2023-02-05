@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="887ce7b1-9c98-42de-85f3-286d847cec8f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/helpers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataProvide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataProvide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +66,24 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG./Users/vyas365/IdeaProjects/SeleniumProject/testng.xml">
+    <configuration name="DataProvide.login" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.DataProvide" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DataProvide.multipleLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
@@ -118,24 +138,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataTest.test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.DataTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="/Users/vyas365/IdeaProjects/SeleniumProject/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -149,10 +151,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG./Users/vyas365/IdeaProjects/SeleniumProject/testng.xml" />
+        <item itemvalue="TestNG.DataProvide.login" />
         <item itemvalue="TestNG.DataProvide.multipleLoginTest" />
         <item itemvalue="TestNG.DataProvide.test" />
         <item itemvalue="TestNG.DataProvide.test1" />
-        <item itemvalue="TestNG.DataTest.test" />
       </list>
     </recent_temporary>
   </component>

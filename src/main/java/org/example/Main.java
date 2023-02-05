@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
 public class Main {
-    WebDriver driver;
+    public WebDriver driver;
     ChromeOptions options = new ChromeOptions().addArguments("--headless","--disable-gpu","--no-sandbox","--window-size=1280,800");
     HomePage homePage;
 

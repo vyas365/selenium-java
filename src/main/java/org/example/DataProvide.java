@@ -4,12 +4,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class DataProvide {
-    WebDriver driver = null;
+    public static WebDriver driver= null;
+    @BeforeSuite
+    public void launchBrowser(){
+        driver = new ChromeDriver();
+    }
 
     @DataProvider(name = "dataProvide")
     public Object[][] dataSet() {
@@ -21,9 +27,8 @@ public class DataProvide {
         };
     }
 
-    @Test(dataProvider = "dataProvide")
+    @Test(dataProvider = "dataProvide", enabled = false)
     public void multipleLoginTest(String username, String password) {
-        driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
         driver.findElement(By.id("user-name")).sendKeys(username);
         driver.findElement(By.id("password")).sendKeys(password);
@@ -32,13 +37,12 @@ public class DataProvide {
 
     @Test
     public void login() {
-        driver = new ChromeDriver();
         driver.get("https://www.google.com");
+        Assert.assertTrue(false);
     }
 
     @AfterTest
     public void cleanup() {
-        driver.close();
         driver.quit();
     }
 }
