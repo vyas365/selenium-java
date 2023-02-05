@@ -2,7 +2,8 @@
 <suite parallel="methods" thread-count="5" name="Suite1" verbose="1" >
     <test name="functional testing1" >
         <classes>
-            <class name="org.example.ParallelTest" />
+<!--            <class name="org.example.ParallelTest" />-->
+            <class name="org.example.DataProvide" />
         </classes>
     </test>
 </suite>
