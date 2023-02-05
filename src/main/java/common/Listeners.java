@@ -18,6 +18,5 @@ public class Listeners extends helpers implements ITestListener {
        } catch (IOException e) {
            throw new RuntimeException(e);
        }
-
     }
 }
