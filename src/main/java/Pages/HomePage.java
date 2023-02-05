@@ -3,10 +3,16 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 
+import java.time.Duration;
+
 public class HomePage {
+
     WebDriver driver;
+
     By cookies = By.id("CybotCookiebotDialogBodyLevelButtonCustomize");
     By rejectCookies = By.id("CybotCookiebotDialogBodyButtonDecline");
 
@@ -15,6 +21,7 @@ public class HomePage {
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
+
     public void setRejectCookies(){
         driver.findElement(cookies).click();
         driver.findElement(rejectCookies).click();

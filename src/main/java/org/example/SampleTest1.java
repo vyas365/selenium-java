@@ -3,7 +3,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class SampleTest extends Main{
+public class SampleTest1 extends Main{
     @BeforeTest
     public void initialSetup() {
         setup();
